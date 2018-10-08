@@ -170,6 +170,9 @@ class SvgUri extends Component{
       if (this.props.height) {
         componentAtts.height = this.props.height;
       }
+      if (this.props.viewBox) {
+        componentAtts.viewBox = this.props.viewBox;
+      }
 
       return <Svg key={i} {...componentAtts}>{childs}</Svg>;
     case 'g':
@@ -308,6 +311,7 @@ SvgUri.propTypes = {
   style: PropTypes.object,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  viewBox: PropTypes.string,
   svgXmlData: PropTypes.string,
   source: PropTypes.any,
   fill: PropTypes.string,

@@ -27,7 +27,11 @@ react-native link react-native-svg # not react-native-svg-uri !!!
 | `source` | `ImageSource` |  | Same kind of `source` prop that `<Image />` component has
 | `svgXmlData` | `String` |  | You can pass the SVG as String directly
 | `fill` | `Color` |  | Overrides all fill attributes of the svg file
-| `fillAll` | `Boolean` |  Adds the fill color to the entire svg object
+| `fillAll` | `Boolean` | | Adds the fill color to the entire svg object
+| `width` | `Number` | | Define rendered component height
+| `height` | `Number` | | Define rendered component height
+| `viewBox` | `String` | | Allows to override the `viewBox` property from the provided SVG.
+| `onLoad` | `Function` | | Called after component is mounted with SVG ready. Does not provides any parameter.
 
 ## Known Bugs
 
