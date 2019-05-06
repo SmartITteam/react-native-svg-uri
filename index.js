@@ -1,8 +1,7 @@
 import React, {Component} from "react";
-import {View} from 'react-native';
+import {View, Image} from 'react-native';
 import PropTypes from 'prop-types'
 import xmldom from 'xmldom';
-import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
 import Svg,{
     Circle,
@@ -22,6 +21,8 @@ import Svg,{
 } from 'react-native-svg';
 
 import * as utils from './utils';
+
+const {resolveAssetSource} = Image;
 
 const ACCEPTED_SVG_ELEMENTS = [
   'svg',
